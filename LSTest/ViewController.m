@@ -7,21 +7,22 @@
 //
 
 #import "ViewController.h"
+#import "lua.h"
+#import "lualib.h"
+#import "lauxlib.h"
+
 
 @interface ViewController ()
-
+@property (nonatomic) lua_State *L;
 @end
+
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
 }
 
 @end
